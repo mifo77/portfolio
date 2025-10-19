@@ -1,0 +1,23 @@
+#aboutme-section {
+    height: 33.3333vh;
+
+    background: #4a5c6a;
+    z-index: 3;
+    margin-top: -25px;
+    padding-top: 25px;
+
+    /* box-shadow: 0 20px 30px rgba(0, 0, 0, 0.7); */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    /* border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px; */
+}
+#aboutme-section p { color: #d8dfe4; font-size: 20px; }
+#aboutme-section .am-content { display: flex; flex-direction: column; align-items: center; width: 75%; margin-top: 20px; }
+#aboutme-section .cmdGroup { margin-bottom: 10px; align-self: flex-start; }
+#aboutme-section .cmdArg, #aboutme-section .cmdSeparator { color: #ccd0cf; }
+#aboutme-section .am-content .am-text { width: 100%; text-align: justify; text-justify: inter-word; margin-left: 60px; }

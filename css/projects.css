@@ -1,0 +1,99 @@
+#projects-section {
+    /* flex: 68 0 0; */
+    flex: 68 0 0;
+    background: #9ba8ab;
+    z-index: 4; /* instead of 2 */
+
+    /* added */
+    /* margin-top: -340px; */
+    /* margin-top: -21%; */
+    margin-left: 20px;
+    margin-right: 50px;
+
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 50px;
+    /* end added */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25%;
+}
+#projects-section .cmdGroup { margin-top: 35px; }
+#projects-section .cmdArg, #projects-section .cmdSeparator { color: #11212d }
+
+#projects-section > div.pj-container { display: flex; justify-content: space-between; width: 75%; }
+#projects-section .pj1, #projects-section .pj2, #projects-section .pj3 {
+    width: 30%;
+    height: 100px;
+    background-color: #4a5c6a;
+    border-radius: 10px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.4);
+
+    /* font-weight: bold; */
+    color: #d8dfe4; /* ccd0cf */
+    font-size: 18px;
+
+    transition: transform 0.3s ease;
+}
+.pj-item:hover { transform: scale(1.1); }
+
+#modal-project {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    z-index: 5;
+}
+#modal-project .modal-project-content {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 350px;
+    max-width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    position: relative;
+}
+#modal-project .modal-project-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+#modal-project a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+#modal-project a:hover {
+    text-decoration: underline;
+}
+#modal-project .modal-project-content p {
+    color: black;
+}

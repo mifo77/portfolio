@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="UTF-8">
+        <title>Portfolio - Oualifi Mohamed Ghali</title>
+
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/neofetch.css">
+        <link rel="stylesheet" type="text/css" href="css/aboutme.css">
+        <link rel="stylesheet" type="text/css" href="css/skills.css">
+        <link rel="stylesheet" type="text/css" href="css/projects.css">
+        <link rel="stylesheet" type="text/css" href="css/extras.css">
+        <link rel="stylesheet" type="text/css" href="css/timeline.css">
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
+
+        <script src="js/skills.js" defer></script>
+        <script src="js/project.js" defer></script>
+        <script src="js/extras.js" defer></script>
+        <script src="js/timeline.js" defer></script>
+    </header>
+
+    <body>
+        <!-- NEOFETCH SECTION -->
+        <div id="neofetch-section" class="section">
+            <div class="nf-content">
+                <img class="nf-photo" src="myself.jpg">
+
+                <div class="nf-textblock">
+                    <div class="cmdGroup">
+                        <span class="cmdPath">/home/mohamed-ghali</span> 
+                        <span class="cmdSeparator">&gt;</span> 
+                        <span class="cmd">neofetch</span>
+                    </div>
+
+                    <div class="nf-text">
+                        <p class="nf-name">Oualifi Mohamed Ghali</p>
+                        <p class="nf-role">AI & Cybersecurity Enthusiast</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT ME SECTION -->
+        <div id="aboutme-section" class="section">
+            <div class="am-content">
+                <div class="cmdGroup">
+                    <span class="cmdSeparator">&gt;</span> 
+                    <span class="cmd">show</span>
+                    <span class="cmdArg">aboutMe.txt</span>
+                </div>
+
+                <p class="am-text">
+                    I'm a curious and analytical person who loves understanding how things work, especially when it comes to computers. Ever since I started coding, I've been drawn to the logic, creativity, and problem-solving it demands. I enjoy learning independently, experimenting, and exploring the deeper principles behind technology rather than just using it. Whether it's delving into AI concepts or preparing for the next programming contest, I'm motivated by challenge and discovery. Studying computer science and cybersecurity feels like the natural next step for someone who doesn't just want to use technology, but to understand and shape it.
+                </p>
+            </div>
+        </div>
+
+        <div class="sk-pj-section">
+            <!-- SKILLS SECTION -->
+            <div id="skills-section" class="section">
+                <div class="sk-content">
+                    <div class="cmdGroup">
+                        <span class="cmdSeparator">&gt;</span> 
+                        <span class="cmd">list</span>
+                        <span class="cmdArg">skills/</span>
+                    </div>
+
+                    <div class="sk-container">
+                        <div class="sk-item cpp"><img src="sk/cpp-icon.svg" alt="C++"></div>
+                        <div class="sk-item"><img src="sk/py-icon.svg" alt="Python"></div>
+                        <div class="sk-item"><img src="sk/cs-icon.svg" alt="C#"></div>
+                        <div class="sk-item"><img src="sk/unity-icon.svg" alt="Unity"></div>
+                        <div class="sk-item"><img src="sk/java-icon.svg" alt="Java"></div>
+                        <div class="sk-item"><img src="sk/linux-icon.svg" alt="Linux"></div>
+                        <div class="sk-item"><img src="sk/html-icon.svg" alt="HTML"></div>
+                        <div class="sk-item"><img src="sk/css-icon.svg" alt="CSS"></div>
+                        <div class="sk-item"><img src="sk/js-icon.svg" alt="JavaScript"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECTS SECTION -->
+            <div id="projects-section" class="section">
+                <div class="cmdGroup">
+                    <span class="cmdSeparator">&gt;</span> 
+                    <span class="cmd">display</span>
+                    <span class="cmdArg">projects/</span>
+                </div>
+
+                <div class="pj-container">
+                    <div class="pj-item pj1">2D Physics Engine</div>
+                    <div class="pj-item pj2">Sandboxed Memory Inspector</div>
+                    <div class="pj-item pj3">Sudoku Solver</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SKILL MODAL -->
+        <div id="modal-skill" class="modal">
+            <div class="modal-skill-content">
+                <span class="modal-skill-close">&times;</span>
+                <img id="modal-skill-img" src="" alt="">
+                <h2 id="modal-skill-title"></h2>
+                <p id="modal-skill-description"></p>
+            </div>
+        </div>
+
+        <!-- PROJECT MODAL -->
+        <div id="modal-project" class="modal">
+            <div class="modal-project-content">
+                <span class="modal-project-close">&times;</span>
+                <h2 id="modal-project-title"></h2>
+                <p id="modal-project-description"></p>
+                <a id="modal-project-link" href="#" target="_blank">View</a>
+            </div>
+        </div>
+
+        <!-- EXTRAS SECTION -->
+        <div id="extras-section" class="section">
+            <div class="cmdGroup">
+                <span class="cmdSeparator">&gt;</span> 
+                <span class="cmd">list</span>
+                <span class="cmdArg">extras/</span>
+            </div>
+
+            <div class="ex-container">
+                <div class="ex-item" data-key="olympiads">Moroccan Olympiads in Informatics</div>
+                <div class="ex-item" data-key="fll-regio">FIRST LEGO LEAGUE Regional</div>
+                <div class="ex-item" data-key="fll-natio">FIRST LEGO LEAGUE National</div>
+                <div class="ex-item" data-key="awb-internship">Attijariwafa Bank Internship</div>
+                <div class="ex-item" data-key="architect-internship">Architect Internship</div>
+            </div>
+        </div>
+
+        <!-- EXTRAS MODAL -->
+        <div id="modal-extra" class="modal">
+            <div class="modal-extra-content">
+                <span class="modal-extra-close">&times;</span>
+                <h2 id="modal-extra-title"></h2>
+                <p id="modal-extra-description"></p>
+                <a id="modal-extra-link" href="#" target="_blank">View</a>
+            </div>
+        </div>
+
+        <!-- TIMELINE SECTION -->
+        <div id="timeline-section" class="sp-section">
+            <div class="cmdGroup">
+                <span class="cmdSeparator">&gt;</span> 
+                <span class="cmd">./timeline.sh</span>
+            </div>
+
+            <div class="tl-container">
+                <div class="tl-event left">
+                    <span class="tl-year">2018</span>
+                    <div class="tl-content">
+                        <p class="tl-title">Started Programming</p>
+                        <p class="tl-desc">Began learning HTML and Java as a hobby, laying the foundation for future development skills.</p>
+                    </div>
+                </div>
+
+                <div class="tl-event right">
+                    <span class="tl-year">2019</span>
+                    <div class="tl-content">
+                        <p class="tl-title">Minecraft Modding</p>
+                        <p class="tl-desc">Discovered Minecraft modding and started creating my own mods, exploring Java in practical projects.</p>
+                    </div>
+                </div>
+
+                <div class="tl-event left">
+                    <span class="tl-year">2020</span>
+                    <div class="tl-content">
+                        <p class="tl-title">Learning Python</p>
+                        <p class="tl-desc">Started Python, focusing on automation and small scripts, expanding my understanding of programming paradigms.</p>
+                    </div>
+                </div>
+
+                <div class="tl-event right">
+                    <span class="tl-year">2021</span>
+                    <div class="tl-content">
+                        <p class="tl-title">C# & Unity</p>
+                        <p class="tl-desc">Learned C# and Unity; developed multiple 2D and 3D games, improving my problem-solving and game design skills.</p>
+                    </div>
+                </div>
+
+                <div class="tl-event left">
+                    <span class="tl-year">2022</span>
+                    <div class="tl-content">
+                        <p class="tl-title">Minecraft Server Projects</p>
+                        <p class="tl-desc">Built Minecraft server tools including launchers and plugins, learning teamwork and server-side scripting.</p>
+                    </div>
+                </div>
+
+                <div class="tl-event right">
+                    <span class="tl-year">2022</span>
+                    <div class="tl-content">
+                        <p class="tl-title">Discord Bots</p>
+                        <p class="tl-desc">Created Discord bots with Python and JavaScript, gaining experience in APIs, event handling, and bot logic.</p>
+                    </div>
+                </div>
+
+                <div class="tl-event left">
+                    <span class="tl-year">2023</span>
+                    <div class="tl-content">
+                        <p class="tl-title">Low-Level Programming & AI Exploration</p>
+                        <p class="tl-desc">Started learning C++ and delving into low-level programming, cybersecurity, and AI concepts, enhancing my understanding of system internals.</p>
+                    </div>
+                </div>
+
+                <div class="tl-event right">
+                    <span class="tl-year">2023</span>
+                    <div class="tl-content">
+                        <p class="tl-title">Hardware Deep Dive</p>
+                        <p class="tl-desc">Studied computer hardware in detail, learning how components interact and how systems operate at a low level.</p>
+                    </div>
+                </div>
+
+                <div class="tl-event left">
+                    <span class="tl-year">2024</span>
+                    <div class="tl-content">
+                        <p class="tl-title">Computer Science Foundations</p>
+                        <p class="tl-desc">Explored computer science history and theory, advanced my low-level programming skills, and studied kernel and OS principles.</p>
+                    </div>
+                </div>
+
+                <div class="tl-event right">
+                    <span class="tl-year">2024</span>
+                    <div class="tl-content">
+                        <p class="tl-title">Robotics Team</p>
+                        <p class="tl-desc">Joined a robotics team, starting hands-on projects, learning electronics, sensors, and programming robotics systems.</p>
+                    </div>
+                </div>
+
+                <div class="tl-event left">
+                    <span class="tl-year">2025</span>
+                    <div class="tl-content">
+                        <p class="tl-title">Robotics Achievements</p>
+                        <p class="tl-desc">Reached 4th place regionally with my robotics team and qualified for the national event, gaining experience in teamwork and engineering challenges.</p>
+                    </div>
+                </div>
+
+                <div class="tl-event right">
+                    <span class="tl-year">2025</span>
+                    <div class="tl-content">
+                        <p class="tl-title">Competitive Programming</p>
+                        <p class="tl-desc">Achieved top 35 in the Moroccan Olympiads in Informatics, strengthening problem-solving and algorithmic skills.</p>
+                    </div>
+                </div>
+
+                <div class="tl-event left">
+                    <span class="tl-year">2025</span>
+                    <div class="tl-content">
+                        <p class="tl-title">2D Physics Engine</p>
+                        <p class="tl-desc">Built a 2D physics engine in C++ from scratch, gaining deep insights into physics simulations and software optimization.</p>
+                    </div>
+                </div>
+
+                <div class="tl-event right">
+                    <span class="tl-year">Next</span>
+                    <div class="tl-content">
+                        <p class="tl-title">Future Plans</p>
+                        <p class="tl-desc">Currently preparing for the 2026 Moroccan Olympiad in Informatics and planning further competitions with the robotics team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT SECTIONS -->
+        <div id="contact-section" class="section">
+            <p>Contact me!</p>
+
+            <div class="contact-icons">
+                <a href="https://github.com/mifo77/" target="_blank" class="icon-circle">
+                    <img src="contact/github-icon.svg" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/mohamed-ghali-oualifi-77615a38a/" target="_blank" class="icon-circle">
+                    <img src="contact/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+                <a href="mailto:mg.oualifi@gmail.com" class="icon-circle">
+                    <img src="contact/email-icon.svg" alt="Email">
+                </a>
+            </div>
+
+            <footer>
+                <p><span class="cmdSeparator">&gt;</span> <span class="cmd">echo</span> "Made by Mohamed Ghali Oualifi | 2025"</p>
+            </footer>
+        </div>
+
+        <div class="scroll-indicator">
+            <span class="scroll-icon">▼</span>
+            <script>
+                const scrollIndicator = document.querySelector('.scroll-indicator');
+
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 100) {
+                        scrollIndicator.style.opacity = '0';
+                    } else {
+                        scrollIndicator.style.opacity = '0.8';
+                    }
+                });
+            </script>
+        </div>
+    </body>
+</html>

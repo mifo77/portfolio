@@ -1,0 +1,32 @@
+#neofetch-section {
+    background: #06141b;
+    z-index: 4;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    width: 94%;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px; */
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+#neofetch-section p { color: #e4dfd8; } /* font-size: 1.3rem; */
+#neofetch-section .cmdGroup { font-size: 13px; text-align: center; margin-bottom: 10px; } /* 0.7rem */
+#neofetch-section .cmdGroup .cmdSeparator { color: #e4dfd8; }
+#neofetch-section .nf-content { display: flex; align-items: center; gap: 116px; }
+#neofetch-section .nf-photo { width: 150px; height: 150px; border-radius: 50%; }
+#neofetch-section .nf-textblock { display: flex; flex-direction: column; align-items: center; }
+#neofetch-section .nf-text { display: flex; flex-direction: column; align-items: center; }
+#neofetch-section .nf-text .nf-name { font-size: 34px; } /* font-size: 26px; */
+#neofetch-section .nf-text .nf-role { font-size: 21px; }
+#neofetch-section .nf-text p { margin: 2px 0; }

@@ -1,0 +1,68 @@
+body {
+    font-family: "Calibri", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: #4a5c6a;
+}
+
+.cmdGroup { font-size: 19px; }
+span.cmdPath { color: #c1ff72; }
+span.cmdSeparator { padding: 10px; }
+span.cmd { color: #ff7340; }
+p { color: white; font-size: 19px; }
+
+.section {
+    width: 100%;
+    height: 33.333vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.sk-pj-section { display: flex; margin-top: -50px; padding-top: 25px; }
+/* .sk-pj-section { display: flex; } */
+#skills-section, #projects-section {
+    position: relative;
+    overflow: hidden;
+
+    margin-top: -25px;
+    padding-top: 25px;
+}
+
+.scroll-indicator {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    z-index: 10;
+    color: #c1ff72;
+    font-size: 22px;
+    opacity: 0.8;
+    animation: bounce 1.5s infinite;
+    cursor: default;
+    user-select: none;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: url("fonts/calibri-regular.ttf") format("truetype");
+  /* font-weight: 400; */
+  font-style: normal;
+}
+
+/* 
+
+Canva 11 -> 15px
+14 -> 19px
+16 -> 21px
+20 -> 26px
+
+*/
